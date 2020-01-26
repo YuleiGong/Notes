@@ -1,0 +1,10 @@
+6,7c6,7
+<         sys.stdout.wrtie = self.reverse_write
+<         return "JABBERWOCKY"
+---
+>         sys.stdout.write = self.reverse_write
+>         return 'JABBERWOCKY'
+16c16
+<             print ('Please DO NOT divide by zero')
+---
+>             print('Please DO NOT divide by zero')

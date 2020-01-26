@@ -1,0 +1,4 @@
+CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS                       NAMES
+00f83890a635        training/webapp     "python app.py"     About a minute ago   Up About a minute   127.0.0.1:5001->5000/tcp    elastic_ride
+4dd819247123        training/webapp     "python app.py"     3 minutes ago        Up 3 minutes        127.0.0.1:32768->5000/tcp   youthful_wilson
+44bd899529f3        training/webapp     "python app.py"     5 minutes ago        Up 5 minutes        0.0.0.0:5000->5000/tcp      inspiring_kapitsa
