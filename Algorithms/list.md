@@ -1,10 +1,12 @@
 # 列表
-* __列表__是元素的集合，其中每一个元素都有一个相对于其他元素的位置。更具体地说，这种列表称为无序列表。
+* __列表__ 是元素的集合，其中每一个元素都有一个相对于其他元素的位置。更具体地说，这种列表称为无序列表。
 
 ## 无序列表
 
 * python实现,为了实现无序列表,我们需要构建__链表__,__无序列表__需要维护元素之间的相对位置,但并不需要在连续的内存空间中维护这些位置信息。如果可以为每一个元素维护下一个元素的位置,那么这些元素的相对位置就能通过下一个元素来指定。
+
 <a href="https://sm.ms/image/Ssm5KXjMuex1V6f" target="_blank"><img src="https://i.loli.net/2020/01/26/Ssm5KXjMuex1V6f.png" ></a>
+
 * 无序列表的抽象表示
 <a href="https://sm.ms/image/KY5SrF6VvufQpxA" target="_blank"><img src="https://i.loli.net/2020/01/26/KY5SrF6VvufQpxA.png" ></a>
 * __Node__ 代表列表的基本数据结构,next存储了下一个节点数据的__引用__
