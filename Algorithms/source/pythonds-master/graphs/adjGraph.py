@@ -84,7 +84,7 @@ class Vertex:
         
     def getDistance(self):
         return self.dist
-        
+
     def getColor(self):
         return self.color
     

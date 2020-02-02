@@ -139,3 +139,45 @@ def buildGraph(wordFile):
                     g.addEdge(word1, word2)
 ```
 ### 实现宽度优先搜索(BFS)
+* 设定一个起点,开始搜索,每次都将该点相关的顶点放入一个列表中
+* 搜索完一个顶点,标记为黑色,依次搜索队列中的点,直到搜索完成
+* 每次搜索,都在子顶点上记录父顶点，便于回溯
+* 搜索完成后,回溯宽度优先搜索,找出路径
+
+```python
+def bfs(g, start):
+    """
+    宽度优先遍历
+    Args:
+        g:图数据
+        start:起始顶点
+    """
+    start.setDistance(0)
+    start.setPred(None)
+    vertQueue = Queue()
+    vertQueue.enqueue(start)
+    while (vertQueue.size() > 0):
+        currentVert = vertQueue.dequeue()
+        for nbr in currentVert.getConnections():#相关联的顶点
+            if (nbr.getColor() == 'white'): #白色代表还未访问过
+                nbr.setColor('gray') #第一次访问,标记为灰色
+                nbr.setDistance(currentVert.getDistance() + 1)
+                nbr.setPred(currentVert)
+                vertQueue.enqueue(nbr)
+        currentVert.setColor('black') #完成对白色的顶点访问后,标记为黑色
+
+def traverse(y):
+    x = y
+    while (x.getPred()):
+        print (x.getId())
+        x = x.getPred()
+    print (x.getId())
+
+if __name__ == '__main__':
+    g = buildGraph('wordFile')
+    start = g.getVertex('fool')
+    bfs(g,start)
+    traverse(g.getVertex('sage'))
+```
+## 深度优先搜索 TODO
+
