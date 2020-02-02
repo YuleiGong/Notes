@@ -27,6 +27,7 @@ def buildGraph(wordFile):
             for word2 in d[bucket]:
                 if word1 != word2:
                     g.addEdge(word1, word2)
+    return g
 
 if __name__ == '__main__':
     buildGraph('wordFile')
