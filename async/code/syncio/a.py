@@ -1,13 +1,9 @@
-# Asyncio
-##  事件循环 
-    * 在Asyncio模块中，每一个进程都有一个事件循环
-    * 在计算系统中，可以产生事件的实体叫做 __事件源__ ，能处理事件的实体叫做 __事件处理者__。此外，还有一些第三方实体叫做 __事件循环__。它的作用是管理所有的事件，在整个程序运行过程中不断循环执行，追踪事件发生的顺序将它们放到队列中，当主线程空闲的时候，调用相应的事件处理者处理事件
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# ylgongPw @ 2020-02-22 11:59:34
+from __future__ import unicode_literals
+from __future__ import absolute_import
 
-* get_event_loop: 得到当前的时间循环
-* call_later: 延后time_delay 后执行
-* call_soon: 立刻执行
-
-```python
 import asyncio
 import datetime
 import time
@@ -42,6 +38,3 @@ if __name__ == '__main__':
     loop.call_soon(func1, end_loop, loop)
     loop.run_forever()
     loop.close()
-```
-
-## 管理协程
