@@ -1,10 +1,10 @@
 # rabbitmq
 * rabbitmq server 维护了一条从producer 到consuemr 的路线保证数据传输
-* exchange : producer 将数据发送给交换器,交换器交换器通过指定的规则发送给队列
-    * direct(routing_key匹配),routing_key绑定了队列,exchange收到消息后,exchange会根据消费者routing_key绑定的不同情况将消息发送到不同的队列中,实现消息路由
-    * fanout(广播),指定了交换器和队列一一绑定，数据发送到指定的交换器。指定的队列处理
-    * topic(模式匹配):和direct 不同的是,可以使用通配符绑定队列。exchange收到消息后,队列是更具通配符规则来取消息的的。
-* ack:默认情况下,ack关闭，开启ack后,只有消费者处理完成消息后,队列才会删除任务，保证任务不丢失,如果忘记发送ack,会不断有消息被消费。
+* exchange : producer 将数据发送给交换器,交换器通过指定的规则发送给队列
+    * direct(routing_key匹配),routing_key绑定了队列,exchange收到消息后,exchange会根据生成者routing_key绑定的不同情况将消息发送到不同的队列中,供消费者使用。实现消息路由。
+    * topic(模式匹配):和direct 不同的是,可以使用通配符绑定:\*(批量一个) \#(匹配多个)。exchange收到消息后安装通配符规则放到队列中。
+    * fanout(广播),指定了交换器和队列一一绑定,和routing_key没关系，数据发送到指定的交换器。指定的队列处理
+* ack:默认情况下,ack关闭，开启ack后,只有消费者处理完成消息后,队列才会删除任务，保证任务不丢失,如果忘记发送ack, 会不断有消息被消费。
 
 ## RPC 
 * 远程过程调用。A服务器需要调用B服务器的函数,方法,就需要使用RPC
