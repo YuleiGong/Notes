@@ -5,8 +5,8 @@
 * or 少使用。 会全表扫描 使用union代替
 
 * 后端分页:
-    * 前端传给后端 页码和每页条数
-    * select * from table limit (page-1)\*pagesize,pagesize;
+    * 前端传给后端 页码和每页条数 pagesize:偏移量
+    * select * from table limit (page-1)\*pagesize offset pagesize;
     * 数据量过大，可以使用唯一索引或主键 select * from table where demo_id > (pageNo-1)\*pageSize limit pageSize 分页
 * 分库分表:
     * 垂直切分:按照字段进行分库分表,不建议使用
