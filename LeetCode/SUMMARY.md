@@ -8,6 +8,7 @@
 | 面试题01.08-零矩阵 | 中等 | [零矩阵](array/interview_01.08_test.go) | qr_array | 低 |
 | 498-对角线遍历 | 中等 | [零矩阵](array/interview_01.08_test.go) | qr_array | 低 TODO |
 | 561-数组拆分 | 简单 | [数组拆分](array/561_test.go) | array | 低 |
+| 167-输入有序数组 | 简单 | [输入有序数组](array/167_test.go) | array | 低 |
 | 14-最长公共前缀 | 简单 | [最长公共前缀](string/14_test.go) | string | 中 |
 | 28-实现strStr() | 简单 | [实现strStr()](string/28_test.go) | string | 低 |
 | 344-反转字符串 | 简单 | [反转字符串](string/344_test.go) | string | 低 |
