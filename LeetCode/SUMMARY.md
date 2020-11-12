@@ -11,7 +11,8 @@
 | 167-输入有序数组 | 简单 | [输入有序数组](array/167_test.go) | array | 低 |
 | 27-移除元素 | 简单 | [移除元素](array/27_test.go) | array | 低 |
 | 485-最大连续1的个数 | 简单 | [最大连续1的个数](array/485_test.go) | array | 低 |
-| 209-长度最小的子数组 | 中等 | [长度最小的子数组](array/209_test.go) | array | 中 |
+| 118-杨辉三角 | 简单 | [杨辉三角](array/118_test.go) | array | 低 |
+| 119-杨辉三角II | 简单 | [杨辉三角II](array/119_test.go) | array | 低 |
 | 14-最长公共前缀 | 简单 | [最长公共前缀](string/14_test.go) | string | 中 |
 | 28-实现strStr() | 简单 | [实现strStr()](string/28_test.go) | string | 低 |
 | 344-反转字符串 | 简单 | [反转字符串](string/344_test.go) | string | 低 |
