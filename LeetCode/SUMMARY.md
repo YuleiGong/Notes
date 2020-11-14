@@ -13,7 +13,10 @@
 | 485-最大连续1的个数 | 简单 | [最大连续1的个数](array/485_test.go) | array | 低 |
 | 118-杨辉三角 | 简单 | [杨辉三角](array/118_test.go) | array | 低 |
 | 119-杨辉三角II | 简单 | [杨辉三角II](array/119_test.go) | array | 低 |
+| 26-删除排序数组的中的重复项 | 简单 | [删除排序数组的中的重复项](array/26_test.go) | array | 低 |
+| 283-移动零 | 简单 | [移动零](array/283_test.go) | array | 低 |
 | 14-最长公共前缀 | 简单 | [最长公共前缀](string/14_test.go) | string | 中 |
 | 28-实现strStr() | 简单 | [实现strStr()](string/28_test.go) | string | 低 |
 | 344-反转字符串 | 简单 | [反转字符串](string/344_test.go) | string | 低 |
+| 544-反转字符串中的单词 | 简单 | [反转字符串](string/544_test.go) | string | 低 |
 
