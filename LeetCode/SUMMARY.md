@@ -19,4 +19,6 @@
 | 28-实现strStr() | 简单 | [实现strStr()](string/28_test.go) | string | 低 |
 | 344-反转字符串 | 简单 | [反转字符串](string/344_test.go) | string | 低 |
 | 544-反转字符串中的单词 | 简单 | [反转字符串](string/544_test.go) | string | 低 |
+| 622-设计循环队列 | 中等 | [设计循环队列](queue/622_test.go) | queue | 低 |
+| 346-数据流中的移动平均值 | 简单 | [数据流中的移动平均值](queue/346_test.go) | queue | 低 |
 
