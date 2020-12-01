@@ -14,8 +14,9 @@
 | 118-杨辉三角 | 简单 | [杨辉三角](array/118_test.go) | array | 低 |
 | 119-杨辉三角II | 简单 | [杨辉三角II](array/119_test.go) | array | 低 |
 | 26-删除排序数组的中的重复项 | 简单 | [删除排序数组的中的重复项](array/26_test.go) | array | 低 |
-| 283-移动零 | 简单 | [移动零](array/283_test.go) | array | 低 | [题解](array/283.md) |2|
-| 11-盛水最多的容器 | 中等 | [盛水最多的容器](array/11_test.go) | array | 中 | [题解](array/11.md) |2|
+| 283-移动零 | 简单 | [移动零](array/283_test.go) | array | 低 | [题解](array/283.md) |3|
+| 11-盛水最多的容器 | 中等 | [盛水最多的容器](array/11_test.go) | array | 中 | [题解](array/11.md) |3|
+| 70-爬楼梯 | 简单 | [爬楼梯](array/70_test.go) | array | 中 | [题解](array/70.md) |2|
 | 14-最长公共前缀 | 简单 | [最长公共前缀](string/14_test.go) | string | 中 |
 | 28-实现strStr() | 简单 | [实现strStr()](string/28_test.go) | string | 低 |
 | 344-反转字符串 | 简单 | [反转字符串](string/344_test.go) | string | 低 |
