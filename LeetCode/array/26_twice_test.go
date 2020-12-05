@@ -3,9 +3,8 @@ package array
 import "testing"
 
 func removeDuplicates(nums []int) int {
-	length := len(nums)
-	slow := 0 //慢指针
-	for fast := 1; fast < length; fast++ {
+	slow := 0
+	for fast := 1; fast < len(nums); fast++ {
 		if nums[slow] != nums[fast] {
 			slow++
 			nums[slow] = nums[fast]
