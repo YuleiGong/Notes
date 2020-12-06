@@ -27,6 +27,6 @@
 | 346-数据流中的移动平均值 | 简单 | [数据流中的移动平均值](queue/346_test.go) | queue 
 | 206-反转链表 | 简单 | [反转链表](linked_list/206_test.go) | linked_list | [题解](linked_list/206.md) |2020-12-06|
 | 24-两两交换链表中的节点 | 中等 | [两两交换链表中的节点](linked_list/24_test.go) | linked_list | [题解](linked_list/24.md) |2020-12-06|
-| 141-环形链表 | 简单 | [环形链表](linked_list/141_test.go) | linked_list | [题解](linked_list/141.md) |2020-12-06|
-| 142-环形链表II | 中等 | [环形链表II](linked_list/142_test.go) | linked_list | [题解](linked_list/142.md) |2020-12-06|
+| 141-环形链表 | 简单 | [环形链表](linked_list/141_test.go) | linked_list | [题解](linked_list/141.md) |2020-12-13|
+| 142-环形链表II | 中等 | [环形链表II](linked_list/142_test.go) | linked_list | [题解](linked_list/142.md) |2020-12-13|
 | 25-K个一组翻转链表 | 困难 | [K个一组翻转链表](linked_list/25_test.go) | linked_list | [题解](linked_list/25.md) |TODO|
