@@ -25,7 +25,7 @@
 | 544-反转字符串中的单词 | 简单 | [反转字符串](string/544_test.go) | string 
 | 622-设计循环队列 | 中等 | [设计循环队列](queue/622_test.go) | queue 
 | 346-数据流中的移动平均值 | 简单 | [数据流中的移动平均值](queue/346_test.go) | queue 
-| 206-反转链表 | 简单 | [反转链表](linked_list/206_test.go) | linked_list | [题解](linked_list/206.md) |2020-12-05|
+| 206-反转链表 | 简单 | [反转链表](linked_list/206_test.go) | linked_list | [题解](linked_list/206.md) |2020-12-06|
 | 24-两两交换链表中的节点 | 中等 | [两两交换链表中的节点](linked_list/24_test.go) | linked_list | [题解](linked_list/24.md) |2020-12-06|
 | 141-环形链表 | 简单 | [环形链表](linked_list/141_test.go) | linked_list | [题解](linked_list/141.md) |2020-12-06|
 | 142-环形链表II | 中等 | [环形链表II](linked_list/142_test.go) | linked_list | [题解](linked_list/142.md) |2020-12-06|
