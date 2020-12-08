@@ -1,8 +1,6 @@
 package array
 
-import (
-	"testing"
-)
+import "testing"
 
 func moveZeroes(nums []int) {
 	zeroIndex := 0
@@ -17,7 +15,7 @@ func moveZeroes(nums []int) {
 	}
 }
 
-func TestMoveZeros(t *testing.T) {
+func TestMoveZero(t *testing.T) {
 	nums := []int{0, 1, 0, 3, 12}
 	moveZeroes(nums)
 	t.Log(nums)
