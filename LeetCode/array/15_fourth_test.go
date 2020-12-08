@@ -18,11 +18,11 @@ func threeSum(nums []int) [][]int {
 		head := base + 1
 		tail := len(nums) - 1
 		for head < tail {
-			target := nums[base] + nums[head] + nums[tail]
+			sum := nums[base] + nums[head] + nums[tail]
 			switch {
-			case target == 0:
+			case sum == 0:
 				result = append(result, []int{nums[base], nums[head], nums[tail]})
-				for head < tail && nums[head] == nums[head+1] {
+				for head < tail && nums[head] == nums[head+1] { //左右移动，如果有重复的，需要多次移动
 					head++
 				}
 				for head < tail && nums[tail] == nums[tail-1] {
@@ -30,12 +30,12 @@ func threeSum(nums []int) [][]int {
 				}
 				head++
 				tail--
-			case target < 0:
+
+			case sum < 0:
 				head++
-			case target > 0:
+			case sum > 0:
 				tail--
 			}
-
 		}
 	}
 
