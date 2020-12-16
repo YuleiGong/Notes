@@ -82,7 +82,7 @@ type TagRelationIndicator struct {
     	IndicatorName     string `gorm:"size:256;"`
     	IndicatorState    string `gorm:"size:256;"`
     	IndicatorGroupKey string                 `gorm:"size:255"`
-    	IndicatorGroupName ResourceIndicatorGroup `gorm:"ForeignKey:IndicatorGroupKey"` //指标库建立外键关联
+    	IndicatorGroupName string
     	UserId            string                 `gorm:"size:255;"`
     	UserName          string                 `gorm:"size:255;"`
     	UpdateTime        *time.Time
