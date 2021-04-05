@@ -213,7 +213,7 @@ func foo(c Counter) {
 ```
 
 * 复制之前已经使用了这个锁，这就导致，复制的 Counter 是一个带状态 Counter。foo()函数一直无法获取锁。
-* 使用 vet 工具可以帮助及早发现死锁情况:
+* 使用 vet 工具可以帮助及早发现有copy Mutes的情况:
 
 ```go
 ➜  go git:(master) ✗ go vet vet.go
@@ -360,7 +360,7 @@ func (m *TokenRecursiveMutex) Unlock(token int64) {
 
 ### 4.1 实现 TryLock
 
-* 当一个 goroutine 调用这个 TryLock 方法请求锁的时候，如果这把锁没有被其他 goroutine 所持有，那么，这个 goroutine 就持有了这把锁，并返回 true；如果这把锁已经被其他 goroutine 所持有，或者是正在准备交给某个被唤醒的 goroutine，那么，这个请求锁的 goroutine 就直接返回 false，不会阻塞在方法调用上。
+* 当一个 goroutine 调用这个 TryLock 方法请求锁的时候，如果这把锁没有被其他 goroutine 所持有，那么，这个 goroutine 就持有了这把锁，并返回 true；如果这把锁已经被其他 goroutine 所持有，或者是正在准备交给某个被唤醒的 goroutine，那么，这个请求锁的 goroutine 就直接返回 false，__不会阻塞__ 在方法调用上。
 
 ```go
 // 复制Mutex定义的常量
