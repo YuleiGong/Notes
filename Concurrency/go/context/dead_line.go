@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	fmt.Println(time.Now())
 	ctx, cancel := context.WithDeadline(context.Background(), time.Now().Add(1*time.Second))
 
 	go watch(ctx, "watch1")
