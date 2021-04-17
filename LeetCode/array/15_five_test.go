@@ -6,17 +6,19 @@ import (
 )
 
 func threeSum(nums []int) [][]int {
-	sort.Ints(nums)
+	sort.Ints(nums) //小到大
 	result := make([][]int, 0)
+
 	for base := 0; base < len(nums); base++ {
 		if nums[base] > 0 {
 			return result
 		}
 		if base > 0 && nums[base] == nums[base-1] {
-			continue //基础数据有出现连续重复，下一位必定会重复，所以需要跳过
+			continue
 		}
 		head := base + 1
 		tail := len(nums) - 1
+
 		for head < tail {
 			sum := nums[base] + nums[head] + nums[tail]
 			switch {
@@ -30,16 +32,16 @@ func threeSum(nums []int) [][]int {
 				}
 				head++
 				tail--
-
-			case sum < 0:
-				head++
 			case sum > 0:
 				tail--
+			case sum < 0:
+				head++
 			}
 		}
 	}
 
 	return result
+
 }
 
 func TestThreeSum(t *testing.T) {
