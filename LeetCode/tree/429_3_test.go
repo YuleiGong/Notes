@@ -12,6 +12,27 @@ type Node struct {
 }
 
 func levelOrder(root *Node) [][]int {
+	var result [][]int
+	var helper func(node *Node, level int)
+
+	helper = func(node *Node, level int) {
+		if node == nil {
+			return
+		}
+
+		if len(result) > level { //通过len判断是否初始化
+			result[level] = append(result[level], node.Val)
+		} else {
+			result = append(result, []int{node.Val})
+		}
+
+		for _, child := range node.Children {
+			helper(child, level+1)
+		}
+	}
+
+	helper(root, 0)
+
 	return result
 }
 
