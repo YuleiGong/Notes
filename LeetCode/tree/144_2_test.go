@@ -33,9 +33,9 @@ func TestPreorderTraversal(t *testing.T) {
 	root := &TreeNode{
 		Val: 1,
 	}
-	root.Left = &TreeNode{Val: 4}
-	root.Right = &TreeNode{Val: 2}
-	root.Right.Left = &TreeNode{Val: 3}
+	root.Left = &TreeNode{Val: 2}
+	root.Right = &TreeNode{Val: 3}
+	root.Right.Left = &TreeNode{Val: 4}
 	root.Right.Right = &TreeNode{Val: 5}
 	t.Log(preorderTraversal(root))
 }
