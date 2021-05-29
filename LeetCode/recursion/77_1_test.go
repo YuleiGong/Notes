@@ -1,7 +1,6 @@
 package recursion
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -14,13 +13,13 @@ func combine(n int, k int) [][]int {
 			tmp := make([]int, k)
 			copy(tmp, path)
 			result = append(result, tmp)
+			return
 		}
 
 		for i := start; i <= n; i++ {
 			path = append(path, i)
 			helper(i+1, path)
-			fmt.Println(path)
-			path = path[:len(path)-1]
+			path = path[:len(path)-1] //TODO 下一个分支，撤销当前选择
 		}
 	}
 
