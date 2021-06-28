@@ -8,9 +8,8 @@ func jump(nums []int) int {
 	var end int
 
 	for i := 0; i < len(nums)-1; i++ {
-		maxPos := max(maxPos, nums[i]+i) //任意一点所能跳跃的最大位置
-
-		if i == end { //跳一次 尽可能的走最多在跳
+		maxPos = max(maxPos, nums[i]+i)
+		if i == end {
 			end = maxPos
 			count++
 		}
